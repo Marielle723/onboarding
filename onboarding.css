@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1e3ff;
+}
+
+.canvas {
+  width: 400px;
+  height: 600px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #90939e;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 400px;
+  height: 50vh;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 20px;
+  background-color: #f5f7ff;
+  top: 0;
+}
+
+.innerBackground {
+  position: absolute;
+  width: 400px;
+  height: 40vh;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 20px;
+
+  background-color: #ebf2ff;
+  top: 0;
+}
+
+.top {
+  width: 325px;
+  height: 200px;
+
+  margin: 20px auto;
+  text-align: center;
+  margin-bottom: 2rem;
+  z-index: 2;
+}
+
+.top h1 {
+  font-size: 1.2rem;
+  color: #435dc9;
+  margin-top: 0.5rem;
+}
+
+.top img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.middle {
+  width: 370px;
+  height: 200px;
+  z-index: 2;
+  padding: 2rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle p {
+  width: 30ch;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #90939e;
+}
+
+.middle .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #d1e3ff;
+  margin-top: 1rem;
+}
+
+.middle .dots i:first-child {
+  color: #435dc9;
+}
+
+.fa-circle:hover {
+  cursor: pointer;
+}
+
+.bottom {
+  width: 91%;
+  height: 28%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.bottom .skip {
+  background-color: #ebf2ff;
+  color: #90939e;
+}
+
+.bottom .next {
+  background-color: #435dc9;
+  color: white;
+}
